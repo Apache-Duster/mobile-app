@@ -1,0 +1,56 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  /* best way to center */
+  .main-container::before {
+    content: "";
+    width: 20vw;
+  }
+  .main-container::after {
+    content: "";
+    width: 20vw;
+  }
+  .main-container {
+    /* another way to center */
+    /* margin-left: 10vw; */
+    width: 60vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main article {
+    height: 75vh;
+    display: flex;
+  }
+  .about {
+    width: 36vw;
+    display: flex;
+    /* border: 2px tomato dashed; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+  .intro {
+    width: 33vw;
+    height: 33vh;
+    color: white;
+    /* border: 2px rgb(255, 0, 195) dashed; */
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: #b3c7cd;
+  }
+  h1 {
+    padding-top: 4rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }

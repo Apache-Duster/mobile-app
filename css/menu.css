@@ -1,0 +1,65 @@
+header {
+    display: flex;
+    /* border: 2px red dashed; */
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+  }
+  header nav {
+    flex-grow: 1;
+  }
+  header::after {
+    content: "";
+    width: 20vw;
+    height: 15vw;
+    /* border: 2px yellow solid; */
+  }
+  header::before {
+    content: "";
+    width: 20vw;
+    height: 15vw;
+    /* border: 2px yellow solid; */
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header nav ul li {
+    display: inline;
+    list-style: none;
+  }
+  a,
+  a:visited,
+  a:link {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .logo {
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 16vw;
+    height: 10vh;
+    flex-grow: 4;
+    /* border: 2px violet dashed; */
+  }
+  
+  a {
+    border: none;
+    border: 0;
+  }
+  /* a slowing effect on hover */
+  a:hover {
+    border-bottom: 2px solid rgb(198, 196, 196);
+    /* box-shadow: 0.3rem 0.3rem 0.01rem 0.1rem rgba(255, 255, 255, 0.941); */
+  }
+  /* empty boxes to make the center form */
+  /* .empty {
+    width: 20vw;
+    height: 7vw;
+    border: 2px greenyellow dashed;
+  } */
